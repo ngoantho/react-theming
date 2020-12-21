@@ -24,7 +24,6 @@ export default class extends Component {
   }
 }
 ```
-
 </details>
 
 ## License
