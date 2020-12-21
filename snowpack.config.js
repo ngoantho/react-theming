@@ -1,27 +1,19 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
-    public: {url: '/', static: true},
-    src: {url: '/dist'},
+    public: { url: "/", static: true },
+    src: { url: "/dist" }
   },
-  plugins: ['@snowpack/plugin-dotenv', '@prefresh/snowpack'],
-  install: [
-    /* ... */
+  plugins: [
+    "@snowpack/plugin-dotenv",
+    "@prefresh/snowpack",
+    "@snowpack/plugin-babel"
   ],
-  installOptions: {
-    /* ... */
-  },
   devOptions: {
-    /* ... */
+    open: "none"
   },
-  buildOptions: {
-    /* ... */
-  },
-  proxy: {
-    /* ... */
-  },
-
   alias: {
-    /* ... */
-  },
+    react: "preact/compat",
+    "react-dom": "preact/compat"
+  }
 };

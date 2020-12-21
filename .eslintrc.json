@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "plugin:flowtype/recommended"],
+  "parser": "babel-eslint",
+  "plugins": ["flowtype"],
+  "globals": {
+    "React": "writable",
+    "process": true
+  },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
+  "rules": {
+    "no-undef": "off",
+    "no-unused-vars": "off"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  }
+}
