@@ -6,8 +6,6 @@
 
 Wrap your React app with ThemeProvider:
 
-<details>
-<summary>Generic example</summary>
 ```jsx
 import React, { Component } from "react"
 import ThemeProvider "..."
@@ -24,7 +22,6 @@ export default class extends Component {
   }
 }
 ```
-</details>
 
 ## License
 
